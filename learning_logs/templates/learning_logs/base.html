@@ -5,7 +5,8 @@
         Hello, {{ user.username }}.
         <a href="{% url 'users:logout' %}?next={% url 'learning_logs:index' %}">log out</a>
     {% else %}
-    <a href="{% url 'users:login' %}">log in</a>
+        <a href="{% url 'users:register' %}">register</a> -
+        <a href="{% url 'users:login' %}">log in</a>
     {% endif %}
 </p>
 {% block content %}{% endblock content %}

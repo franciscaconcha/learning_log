@@ -15,5 +15,8 @@ urlpatterns = [
 	# Logout page
 	re_path(r'^logout/$',
 	        LogoutView.as_view(),
-	        name='logout')
+	        name='logout'),
+
+	# Registration page
+	re_path(r'^register/$', views.register, name='register')
 ]
